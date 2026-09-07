@@ -2,9 +2,9 @@
   "$schema": "./schema/piphi-manifest.schema.json",
   "manifest_version": "1.0",
   "id": "piphi-network-kia-hyundai-connect",
-  "name": "Piphi Network Kia Hyundai Connect",
+  "name": "Kia, Hyundai & Genesis Connect",
   "version": "0.1.0",
-  "description": "PiPhi starter runtime for region- and vehicle-negotiated Kia, Hyundai, and Genesis connected services.",
+  "description": "Monitor and control supported connected vehicles through regional owner services.",
   "metadata": {
     "generator": "piphi-network-create",
     "scaffold_version": "0.3.0",
@@ -134,5 +134,69 @@
         "default_widget": "tile"
       }
     }
-  ]
+  ],
+  "marketplace": {
+    "metadata_version": 2,
+    "display_name": "Kia, Hyundai & Genesis Connect",
+    "summary": "Monitor and control supported connected vehicles through regional owner services.",
+    "category": "mobility",
+    "regions": [
+      "EU",
+      "NA",
+      "APAC"
+    ],
+    "languages": [
+      "en"
+    ],
+    "publisher": {
+      "name": "PiPhi Network",
+      "website_url": "https://piphi.io",
+      "support_url": "https://github.com/PiPhi-io/piphi-network-kia-hyundai-connect/issues",
+      "security_contact": "support@piphi.io"
+    },
+    "access": [
+      {
+        "id": "credentials",
+        "label": "Account or device credentials",
+        "reason": "Authenticates only to the configured vendor account, service, or local device and keeps credentials out of state and diagnostics.",
+        "required": true
+      }
+    ],
+    "compatibility": [
+      {
+        "brand": "Kia, Hyundai, and Genesis",
+        "model": "Vehicles supported by configured regional connected-services accounts"
+      }
+    ],
+    "documentation_url": "https://github.com/PiPhi-io/piphi-network-kia-hyundai-connect",
+    "support_url": "https://github.com/PiPhi-io/piphi-network-kia-hyundai-connect/issues",
+    "changelog_url": "https://github.com/PiPhi-io/piphi-network-kia-hyundai-connect/releases",
+    "quality_tier": "unrated",
+    "governance": {
+      "schema_version": 1,
+      "publication_status": "draft",
+      "rollout_percent": 0,
+      "lifecycle_status": "active",
+      "qualification": {
+        "status": "unverified"
+      }
+    },
+    "device_types": [
+      "vehicle",
+      "electric vehicle",
+      "plug-in hybrid"
+    ],
+    "protocols": [
+      "Kia Connect",
+      "Hyundai Bluelink",
+      "Genesis Connected Services",
+      "HTTPS"
+    ],
+    "discovery_methods": [
+      "account and vehicle discovery"
+    ],
+    "connectivity": "cloud",
+    "offline_support": "none",
+    "privacy_url": "https://github.com/PiPhi-io/piphi-network-kia-hyundai-connect/blob/main/docs/privacy.md"
+  }
 }
