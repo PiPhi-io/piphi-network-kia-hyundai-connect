@@ -207,5 +207,8 @@
     "connectivity": "cloud",
     "offline_support": "none",
     "privacy_url": "https://github.com/PiPhi-io/piphi-network-kia-hyundai-connect/blob/main/docs/privacy.md"
+  },
+  "onboarding": {
+    "mode": "account"
   }
 }
